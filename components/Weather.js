@@ -39,11 +39,14 @@ export default function Weather({ weatherData, fetchWeatherData }) {
      let textColor = backgroundImg !== sunny ? 'white' : 'black'
 
 //convert farenheit to celcius
-let sub = temp -32 ;
-let mult = sub * 5 ;
-let celcius = mult / 9 ;
+// let sub = temp -32 ;
+// let mult = sub * 5 ;
+// let celcius = mult / 9 ;
 // let convertedCelcius = celcius.toFixed(2)  / 6;
-let convertedCelcius = Math.floor(celcius) ;
+// let convertedCelcius = Math.floor(celcius) ;
+
+// convert Kelvin to celcius
+let convertToCelcius = temp - 273.15
 
     return (
         <View style={styles.container}>
@@ -58,7 +61,7 @@ let convertedCelcius = Math.floor(celcius) ;
                     <SearchBar fetchWeatherData={fetchWeatherData} />
                     <Text style={{ ...styles.headerText, color: textColor, fontSize: 46 }}>{name}</Text>
                     <Text style={{ ...styles.mainText, color: textColor, }}>{main}</Text>
-                    <Text style={{ ...styles.headerText, color: textColor, fontSize:30  }}>{convertedCelcius} °deg</Text>
+                    <Text style={{ ...styles.headerText, color: textColor, fontSize:30  }}>{convertToCelcius} °C</Text>
 
                 </View>
                 <View style={styles.extraInfo}>
