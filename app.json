@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "weather-app",
-    "slug": "weather-app",
+    "name": "excellent_shade Weather-App",
+    "slug": "excellent-weather-app",
+    "description":"this is a weather app created by schadrack Botombe ",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/brand.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/weather-logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
